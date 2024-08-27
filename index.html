@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es-mx">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Challenge 1</title>
+    <link rel="shortcut icon" href="Imágenes/icon (2).png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css"> 
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+
+</head>
+
+
+<body>
+
+    <header class="header">
+        <img src="./Imágenes/Logoalura.png" alt="Logo alura">
+    </header>
+
+    <div class="containerL">
+        <div class="encriptar">
+            <textarea 
+                id="textousuario" 
+                name="textousuario" 
+                class="textousuario"  
+                cols="30" 
+                rows="10" 
+                placeholder="Ingrese su texto aquí"
+            ></textarea>
+        </div>
+
+        <div class="advertencia">
+            <p class="advertenciap"><img src="./Imágenes/signoexclamación.png" alt="Signo de exclamación"> Sólo letras minúsculas y sin acentos</p>
+        </div>
+
+        <div class="opciones_botones">
+            <button onclick="encriptar()" class="botonen" type="button">Encriptar</button>
+            <input onclick="desencriptar()" type="button" class="botondes" value="Desencriptar"> 
+        </div>
+
+        <div class="containerR">
+            <img src="./Imágenes/Muñeco.png" alt="Muñeco" id="Muñeco">
+            <div class="mensaje_encriptado" id="mensaje_encriptado">
+                <h2 class="mensaje_encriptado_h2" id="no-mensaje">Ningún mensaje fue encontrado.</h2>
+                <p id="no-mensaje-parrafo" class="mensaje_encriptado_p" >Ingresa el texto que deseas encriptar o desencriptar.</p>
+            </div>
+        </div>
+    </div>
+     
+    
+</body>
+
+
+<script src="encriptador.js"></script>
+</html>
+
+
